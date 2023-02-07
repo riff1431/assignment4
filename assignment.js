@@ -1,16 +1,64 @@
-numbers = [20, 30, -40, 50, -60];
+// mindGame 
+function mindGame(number){
+  let first= number * 3;
+  let second= first + 10;
+  let third= second / 2;
+  let fourth= third - 5;
+  return fourth;
+ }
 
-function findingBadData(number) {
-  for (let i = 0; i < numbers.length; i++) {
-    data = numbers[i];
 
-    if (data <= 0) {
-      return "Bad data";
-    } else {
-      return "Good Data";
-    }
+//  evenOdd
+ function evenOdd(number){
+  let calculation= number%2;
+  if( calculation === 0){
+      return ('even')
+  }
+  else {
+     return('odd')
   }
 }
 
-const result = findingBadData(numbers);
-console.log(result);
+// isLGSeven
+function isLGSeven(number){
+  if ( number < 7 ){
+      let smallThanSeven =  number - 7;
+      return smallThanSeven;
+  }
+  else{
+      let smallLessSeven= number * 2;
+      return smallLessSeven;
+  }
+}
+
+// findingBadData
+function findingBadData(numbers) {
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    let element = numbers[i];
+    if (element < 0) {
+      sum = sum + 1;
+    }
+  }
+  return sum;
+}
+
+// gemsToDiamond
+function gemsToDiamond(firstInput, secondInput, thirdInput) {
+  const firstFriendCapacity = 21;
+  const secondFriendCapacity = 32;
+  const thirdFriendCapacity = 43;
+
+  const firstDiamond = firstFriendCapacity * firstInput;
+  const secondDiamond = secondFriendCapacity * secondInput;
+  const thirdDiamond = thirdFriendCapacity * thirdInput;
+
+  const totalDiamon = firstDiamond + secondDiamond + thirdDiamond;
+
+  if (totalDiamon > 1000 * 2) {
+    const less = totalDiamon - 2000;
+    return less;
+  } else {
+    return totalDiamon;
+  }
+}
