@@ -1,4 +1,6 @@
-// mindGame 
+// Function Name: mindGame 
+// Function Description: A simple math calculation. It's called mindGame . It will help to output a result base on own conditions
+
 function mindGame(number){
   let first= number * 3;
   let second= first + 10;
@@ -7,8 +9,9 @@ function mindGame(number){
   return fourth;
  }
 
+// Function Name: evenOdd 
+// Function Description: The function will convert text to character numbers. It will help to output even numbers and odd numbers
 
-//  evenOdd
  function evenOdd(number){
   let calculation= number%2;
   if( calculation === 0){
@@ -19,7 +22,9 @@ function mindGame(number){
   }
 }
 
-// isLGSeven
+// Function Name: isLGSeven
+// Function Description: The function will help to judge whether the input number is greater than '7' or less the '7'. The result will able calculation base on own rules 
+
 function isLGSeven(number){
   if ( number < 7 ){
       let smallThanSeven =  number - 7;
@@ -31,7 +36,9 @@ function isLGSeven(number){
   }
 }
 
-// findingBadData
+// Function Name: findingBadData
+// Function Description: The function will help to find the minus numbers and also it will output how many minus numbers available in the input array
+
 function findingBadData(numbers) {
   let sum = 0;
   for (let i = 0; i < numbers.length; i++) {
@@ -43,7 +50,10 @@ function findingBadData(numbers) {
   return sum;
 }
 
-// gemsToDiamond
+
+// Function Name: gemsToDiamond
+// Function Description: The function will convert three friend's gems to diamonds and also calculate the total diamond based on their own conditions
+
 function gemsToDiamond(firstInput, secondInput, thirdInput) {
   const firstFriendCapacity = 21;
   const secondFriendCapacity = 32;
@@ -53,12 +63,12 @@ function gemsToDiamond(firstInput, secondInput, thirdInput) {
   const secondDiamond = secondFriendCapacity * secondInput;
   const thirdDiamond = thirdFriendCapacity * thirdInput;
 
-  const totalDiamon = firstDiamond + secondDiamond + thirdDiamond;
+  const totalDiamond = firstDiamond + secondDiamond + thirdDiamond;
 
-  if (totalDiamon > 1000 * 2) {
-    const less = totalDiamon - 2000;
+  if (totalDiamond > 1000 * 2) {
+    const less = totalDiamond - 2000;
     return less;
   } else {
-    return totalDiamon;
+    return totalDiamond;
   }
 }

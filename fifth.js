@@ -7,13 +7,13 @@ function gemsToDiamond(firstInput, secondInput, thirdInput) {
   const secondDiamond = secondFriendCapacity * secondInput;
   const thirdDiamond = thirdFriendCapacity * thirdInput;
 
-  const totalDiamon = firstDiamond + secondDiamond + thirdDiamond;
+  const totalDiamond = firstDiamond + secondDiamond + thirdDiamond;
 
-  if (totalDiamon > 1000 * 2) {
-    const less = totalDiamon - 2000;
+  if (totalDiamond > 1000 * 2) {
+    const less = totalDiamond - 2000;
     return less;
   } else {
-    return totalDiamon;
+    return totalDiamond;
   }
 }
 
